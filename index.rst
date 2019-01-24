@@ -3,15 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+*********************
 YamFlow Documentation
-=====================
+*********************
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-YamFlow recommends a standard machine learning (ML) workflow of various 
+YamFlow proposes a standard machine learning (ML) workflow of various 
 activities, such as training, model validation, model deployment, 
-and inference, so that these activities can be programmed as composable 
-services to mash up ML pipelines.
+and inference. 
+With standardizing ML workflows, these activities can be automated
+so as to so as to mash up and automate ML pipelines.
+
+Core ML Activities
+==================
+
+.. figure:: images/core_activities.png
+   
+   ML core activities.
+
+The above figure shows the core ML activities.
+
+
+
 
