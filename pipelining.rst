@@ -19,7 +19,7 @@ It consists of the following activities:
   modeling, training, and inference.
 - `Produce Data`_ produces the following data.
 
-  - `Produce Experimental Data`_ produces the data sets necessary for 
+  - `Produce Modeling Data`_ produces the data sets necessary for 
     desiging the ML model.
   - `Produce Training Data`_ produces the training and validation data sets.
   - `Produce Inference Data`_ produces the data sets or streams for inference.
@@ -53,10 +53,10 @@ Preprocess Data
 Produce Data
 ============
 
-.. _produce_experimental_data:
+.. _produce_modeling_data:
 
-Produce Experimental Data
--------------------------
+Produce Modeling Data
+---------------------
 
 .. _produce_training_data:
 
