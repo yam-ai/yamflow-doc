@@ -3,13 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-*********************
-YamFlow Documentation
-*********************
+*******
+YamFlow
+*******
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   pipelining.rst
+   modeling.rst
+   training.rst
+   inference.rst
 
 Introduction
 ============
@@ -24,9 +29,25 @@ programming framework for coding interoperable and composable ML tasks.
 YamFlow Overview
 ================
 
-.. figure:: images/yamflowchart.png
+:numref:`yamflowchart` shows the flowchart of YamFlow, which specifies
+the overall process of a typical ML implementation in the design time and run time. 
+Although the actual processes of different ML implementations may vary, 
+the activity sequences and data flows should large resemble YamFlow.
+
+.. _yamflowchart:
+.. figure:: _static/images/yamflowchart.svg
    
    YamFlow Chart.
+
+YamFlow consists of the following work streams:
+
+- :doc:`pipelining` specifies the work stream to build the data pipelines
+  for ML modeling, training, and inference.
+- :doc:`modeling` specifies the work stream to explore the data, and 
+  design and code the ML model.
+- :doc:`training` specifies the work stream to train the coded model.
+- :doc:`inference` specifies the work stream to deploy the inference app
+  and serve the trained model.
 
 
 
