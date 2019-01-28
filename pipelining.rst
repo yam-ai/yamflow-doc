@@ -9,17 +9,24 @@ The Pipelining work stream prepares the data sets and data streams for
 ML modeling, training, and inference. 
 It consists of the following activities:
 
-- `Acquire data`_.
-- `Clean data`_.
-- `Label data`_.
-- `Preprocess data`_.
-- `Produce data`_.
+- `Acquire Data`_ aggregates the necessary data from the backend data sources 
+  (e.g., databases) into raw data sets for ML modeling, training, and inference. 
+- `Clean Data`_ cleans the aggregated data if necessary so that the data 
+  quality is sufficient for labeling or preprocessing.
+- `Label Data`_ annotates the data points with labels for ML training. 
+  Manual curation may be mecessary.
+- `Preprocess Data`_ preprocesses the data into the formats suitable for ML
+  modeling, training, and inference.
+- `Produce Data`_ produces the following data.
 
-  - `Produce experimental data`_.
-  - `Produce training data`_.
-  - `Produce inference data`_.
+  - `Produce Experimental Data`_ produces the data sets necessary for 
+    desiging the ML model.
+  - `Produce Training Data`_ produces the training and validation data sets.
+  - `Produce Inference Data`_ produces the data sets or streams for inference.
 
-- `Validate inference results`_.
+- `Validate Inference Results`_ validates the inference results, which may
+  involve manual curation. Inaccurate results may be relabeled for future 
+  training.
 
 .. _acquire_data:
 
