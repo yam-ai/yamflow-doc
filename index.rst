@@ -11,20 +11,24 @@ YamFlow Documentation
    :maxdepth: 2
    :caption: Contents:
 
-YamFlow proposes a standard machine learning (ML) workflow of various 
-activities, such as training, model validation, model deployment, 
-and inference. 
-With standardizing ML workflows, these activities can be automated
-so as to so as to mash up and automate ML pipelines.
+Introduction
+============
 
-Core ML Activities
-==================
+YamFlow proposes a reference workflow for machine learning (ML).
+This reference workflow is aimed to provide a canonical taxonomy for 
+practitioners to understand and communicate the activity and data flows
+typically involved in a ML process. In addition, YamFlow also serves
+as the baseline for `YAM.AI <https://www.yam.ai>`_ to architect a 
+programming framework for coding interoperable and composable ML tasks.
 
-.. figure:: images/core_activities.png
+YamFlow Overview
+================
+
+.. figure:: images/yamflowchart.png
    
-   ML core activities.
+   YamFlow Chart.
 
-The above figure shows the core ML activities.
+
 
 
 
