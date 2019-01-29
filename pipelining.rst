@@ -16,16 +16,11 @@ It consists of the following activities:
   quality is sufficient for labeling or preprocessing.
 - `Label Data`_ annotates the data points with labels for ML training. 
   Manual curation may be mecessary.
-- `Preprocess Data`_ preprocesses the data into the formats suitable for ML
-  modeling, training, and inference.
-- `Produce Data`_ produces the following data.
-
-  - `Produce Modeling Data`_ produces the data sets necessary for 
-    desiging the ML model.
-  - `Produce Training Data`_ produces the training and validation data sets.
-  - `Produce Inference Data`_ produces the data sets or streams for inference.
-
-- `Validate Inference Results`_ validates the inference results, which may
+- `Preprocess Inference Inputs`_ transforms the cleaned data into the specific input 
+  format reqired by the inference application.
+- `Preprocess Training Sets`_ transforms the labeled data into the training 
+  data files suitable for experimentation or training.
+- `Validate Inference Outputs`_ validates the inference results, which may
   involve manual curation. Inaccurate results may be relabeled for future 
   training.
 
@@ -69,65 +64,39 @@ Label Data
 ==========
 
 This activity labels the data points for supervised ML, if necessary. 
-The labeling process often involves manual labeling but can be automated 
-in some use cases. This aims to map each data point to the expected outputs,
-which can be a set of labels (for classification) or values (for regression).
-A data scientist can use the labled data set to experiment various ML models 
-and turn the hyperparameters during ML design. 
+The labeling process often involves manual labeling but can also be automated 
+in some use cases. This aims to map each data point to the expected inference 
+results, which can be a set of labels (for classification) or values (for regression).
+A data scientist can use the labeled data set to experiment various ML models 
+and tune the hyperparameters during ML design. 
 After the ML model is designed and programmed, the labeld data set will be used 
 to train the model for serve inference. 
 For unsupervised ML, this step may be skipped.
 
-.. _preprocess_data:
+.. _preprocess_inference_inputs:
 
-Preprocess Data
-===============
+Preprocess Inference Inputs
+===========================
 
-This activity preprocesses the cleaned or labeled data into an format
-specific to the ML library used for modeling or training. For inference,
-the data may need to be structured as specified by the inference application, 
-for example, as an API request stream, or simply a data file. 
-This can be automated using a preprocessor program or service.
+This activity produces the API requests, the message stream, or the data file 
+for the inference application to process. How the inference data should be constructed
+and submitted depends on the specific input requirements of the inference application.
 
-.. _produce_data:
+.. _preprocess_training_sets:
 
-Produce Data
-============
+Preprocess Training Sets
+========================
 
-This activity feeds the preprocessed data to a ML library, program, or service
-for modeling, training or inference.
+This activity produces the training data file for modeling or training. 
+The file format can be specific to the ML library used.
 
-.. _produce_modeling_data:
+.. _validate_inference_outputs:
 
-Produce Modeling Data
----------------------
-
-This activity produces the data for feeding into the ML modeling software to facilitate
-data exploration in the ML design time.
-
-.. _produce_training_data:
-
-Produce Training Data
----------------------
-
-This activity produces a updated training data set for the recurrent ML training.
-
-.. _produce_inference_data:
-
-Produce Inference Data
-----------------------
-
-This activity produces the API request stream, or data file for the
-inference application to process. How the inference data should be constructed
-and submitted depends on the specific requirements of the inference application.
-
-.. _validate_inference_results:
-
-Validate Inference Results
+Validate Inference Outputs
 ==========================
 
-The results produced by the inference application are fed back for validation
-against the expected outputs. The results which are not sufficiently accurate
-should be relabeled (possibly manually) and merged into the training data sets
-for retraining so as to continously improve the ML model.
+The outputs from the inference application are fed back for validation
+against the expected results. The outputs which are  insufficiently accurate
+can be relabeled (manually) and merged into a new training data set
+for retraining so as to continously improve the model.
 
