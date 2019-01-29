@@ -33,15 +33,49 @@ It consists of the following activities:
 Acquire Data
 ============
 
+This activity acquires the necessary raw data sets for ML modeling, training, 
+and inference.
+Data integration may be involved in generating ML data points that 
+cover data fields from multiple data sources. Traditional 
+`Extract, Transform, Load (ETL) <https://en.wikipedia.org/wiki/Extract,_transform,_load>`_
+tools and 
+`Enterprise Service Bus (ESB) <https://en.wikipedia.org/wiki/ESB>`_ 
+may be used for simplifying data acquisition and integration.
+Raw data often come in a variety of forms and thus
+are commonly stored in data files or a database with 
+a `schemaless <https://en.wikipedia.org/wiki/NoSQL>`_ or 
+`columnar <https://en.wikipedia.org/wiki/Column-oriented_DBMS>`_ structure.
+
 .. _clean_data:
 
 Clean Data
 ==========
 
+This activity improves the quality of the data sets up to the standard 
+required for the downstream ML. 
+Through data cleansing, the raw data are cleaned
+so that the resultant data for ML are as valid, accurate, complete, consistent, 
+and uniform as expected.
+The data may go through a series of multiple data cleansing procedures, 
+such as value validition, data reformatting, duplicate elimination, and 
+statistical analysis.
+Since the inference data do not have labels, 
+cleaned data are often directly be used for inference preprocessing.
+
 .. _label_data:
 
 Label Data
 ==========
+
+This activity labels the data points, if necessary, for supervised ML. 
+The labeling process  often involves manual labeling but can be automated 
+in some use cases. This aims to map each data point to the expected outputs,
+which can be a set of labels (for classification) or values (for regression).
+A data scientist can use the labled data set to experiment various ML models 
+and turn the hyperparameters during ML design. 
+After the ML model is designed and programmed, the labeld data set will be used 
+to train the model for serve inference. 
+For unsupervised ML, this step may be skipped.
 
 .. _preprocess_data:
 
