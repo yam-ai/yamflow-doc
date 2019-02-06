@@ -28,7 +28,7 @@ YamFlow Overview
 :numref:`yamflowchart` shows the flowchart of YamFlow, which specifies
 the overall process of a typical ML implementation in the design time and run time. 
 Although the actual processes of different ML implementations may vary, 
-the activity sequences and data flows should large resemble YamFlow.
+the activity sequences and data flows should largely resemble YamFlow.
 
 .. _yamflowchart:
 .. figure:: _static/images/yamflowchart.svg
