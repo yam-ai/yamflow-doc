@@ -1,15 +1,11 @@
-.. YamFlow Documentation documentation master file, created by
-   sphinx-quickstart on Thu Jan 24 14:21:28 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 *******
 YamFlow
 *******
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
+   :hidden:
 
    pipelining.rst
    modeling.rst
@@ -32,7 +28,7 @@ YamFlow Overview
 :numref:`yamflowchart` shows the flowchart of YamFlow, which specifies
 the overall process of a typical ML implementation in the design time and run time. 
 Although the actual processes of different ML implementations may vary, 
-the activity sequences and data flows should large resemble YamFlow.
+the activity sequences and data flows should largely resemble YamFlow.
 
 .. _yamflowchart:
 .. figure:: _static/images/yamflowchart.svg
