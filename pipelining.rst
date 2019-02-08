@@ -5,8 +5,8 @@ Pipelining
 Introduction
 ============
 The first swimlane in :numref:`yamflowchart` illustrates the Pipelining
-workstream. 
-The Pipelining work stream prepares the data sets and data streams for 
+work stream. 
+In this stream, the data engineer prepares the data sets for 
 ML modeling, training, and inference. The activities are summarized in 
 the following table.
 
@@ -41,7 +41,7 @@ the following table.
 Acquire Data
 ============
 
-This activity acquires the necessary raw data sets for ML modeling, training, 
+In this activity, the necessary raw data sets are acquired for ML modeling, training, 
 and inference.
 Data integration may be involved in generating ML data points that 
 cover data fields from multiple data sources. Traditional 
@@ -59,7 +59,7 @@ a `schemaless <https://en.wikipedia.org/wiki/NoSQL>`_ or
 Clean Data
 ==========
 
-This activity improves the quality of the data sets up to the standard 
+In this activity, the quality of the data sets is improved up to the standard 
 required for the downstream ML. 
 Through data cleansing, the raw data are cleaned
 so that the resultant data for ML are as valid, accurate, complete, consistent, 
@@ -75,7 +75,7 @@ cleaned data are often directly be used for inference preprocessing.
 Label Data
 ==========
 
-This activity labels the data points for supervised ML. 
+In this activity, the data are labeled to support the supervised ML. 
 (For unsupervised ML, this step may be skipped.)
 The labeling process often involves manual labeling but can also be automated 
 in some use cases. 
@@ -91,8 +91,10 @@ to train the model for serve inference.
 Preprocess Inference Inputs
 ===========================
 
-This activity produces the API requests, the message stream, or the data file 
-for the inference application to process. 
+In this activity, the cleaned and / or labeled data are transformed to 
+the input format required by the inference application to process,
+for example,
+in form of API requests, a message stream, or a data file. 
 How the inference input data should be constructed and submitted 
 depends on the specific input requirements of the inference application.
 
@@ -101,7 +103,7 @@ depends on the specific input requirements of the inference application.
 Preprocess Training Data
 ========================
 
-This activity produces the training data sets for modeling or training. 
+In this activity, the training data sets are produced for modeling or training. 
 The file format can be specific to the ML library used. 
 The training data can be split into two sets: training sets and 
 testing sets. The training set is used to train the model while
