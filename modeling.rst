@@ -6,8 +6,9 @@ Introduction
 ============
 The second swimlane in :numref:`yamflowchart` illustrates the Modeling
 work stream. 
-In this work stream, the data scientst explores the data sets, 
-experiments various ML models with the data sets, 
+In this work stream, the data scientst explores the data sets prepared 
+in the :doc:`pipelining` work stream, 
+experiments various ML algorithms and models with the data sets, 
 optimizes the hyperparameters to get the desired results,
 and finally codes the selected and turned ML model.
 
@@ -18,7 +19,7 @@ and finally codes the selected and turned ML model.
 |                                | suitable ones are prepared (in the Pipelining work      | cleaned data      | data set           |
 |                                | stream for modeling the ML problem.                     |                   |                    |
 +--------------------------------+---------------------------------------------------------+-------------------+--------------------+
-| `Experiment Models`_           | Various ML models (e.g., neural network                 | Suitable          | Selected           |
+| `Experiment Models`_           | Various ML algorithms and models (e.g., neural network  | Suitable          | Selected           |
 |                                | architectures) are experimented using the data          | data set          | ML                 |
 |                                | to select an effective model for the ML problem         |                   | model              |
 +--------------------------------+---------------------------------------------------------+-------------------+--------------------+
@@ -53,8 +54,10 @@ Experiment Models
 
 In this activity, the data scientist designs the ML model using the 
 selected data sets. For example, he or she develops various ML models 
-(e.g., neural network architectures), trains the models with a 
-training data set, validates the models with the testing data set, and then
+based on different algorithms
+(e.g., neural network architectures), 
+trains the models with the training data set, 
+validates the models with the testing data set, and then
 selects the suitable model based on the inference accuracy measures, such as 
 `precision and recall <https://en.wikipedia.org/wiki/Precision_and_recall>`_.
 
@@ -82,5 +85,5 @@ After the ML model with the hyperparameters are defined,
 the ML model is programmed as training and inference applications. 
 This activity may require various system development and 
 infrastructure skills 
-(e.g., Web API development, container packaging)
+(e.g., web API development, cloud programming, container orchestration)
 and is thus often performed by the data engineer or software engineer.
