@@ -29,7 +29,6 @@ or automated whereever possible especially for recurrent training.
 |                                | :doc:`inference` work stream.                           |                   | registry           |
 +--------------------------------+---------------------------------------------------------+-------------------+--------------------+
 
-
 .. _train_model:
 
 Train Model
