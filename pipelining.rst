@@ -84,7 +84,7 @@ An output can be a set of labels (for classification) or values (for regression)
 A data scientist can use the labeled data set to experiment different ML models 
 and tune the hyperparameters during ML design. 
 After the ML model is designed and programmed, the labeld data set is used 
-to train the model for serve inference.
+to train the model in the :doc:`training` work stream.
 
 .. _preprocess_inference_inputs:
 
@@ -92,7 +92,8 @@ Preprocess Inference Inputs
 ===========================
 
 In this activity, the cleaned and / or labeled data are transformed to 
-the input format required by the inference application to process,
+the input format required by the inference application to process
+in the :doc:`inference` work stream,
 for example,
 in form of API requests, a message stream, or a data file. 
 How the inference input data should be constructed and submitted 
@@ -103,21 +104,25 @@ depends on the specific input requirements of the inference application.
 Preprocess Training Data
 ========================
 
-In this activity, the training data sets are produced for modeling or training. 
+In this activity, the training data sets are produced for 
+modeling :doc:`modeling` work stream
+or training in the :doc:`training` work stream. 
 The file format can be specific to the ML library used. 
-The training data can be split into two sets: training sets and 
-testing sets. The training set is used to train the model while
+The training data can be split into two sets: training set and 
+testing set. The training set is used to train the model while
 the testing set is used to validate the model for its accuracy.
-Usually, the model to serve the inference will only be updated if the 
-new version of the model has better accuracy than the current version.
 
 .. _validate_inference_outputs:
 
 Validate Inference Outputs
 ==========================
 
-The outputs from the inference application are fed back for validation
-against the expected results. The outputs which are insufficiently accurate
-can be relabeled (manually) and merged into a new training data set
-for retraining so as to continously improve the model.
+The outputs from the inference application 
+in the :doc:`inference` work stream are fed back for validation
+against the expected results. The outputs, 
+especially those which are insufficiently accurate,
+can be relabeled (manually) can be merged into the 
+new training and testing sets
+for retraining in the :doc:`training` work stream 
+so as to continously improve the model.
 
