@@ -53,7 +53,7 @@ Experiment Models
 =================
 
 In this activity, the data scientist designs the ML model using the 
-selected data sets. For example, he or she develops various ML models 
+selected data sets. For example, he or she experiments various ML models 
 based on different algorithms
 (e.g., neural network architectures), 
 trains the models with the training data set, 
@@ -74,7 +74,7 @@ Different ML algorithms may involve different sets of hyperparameters
 (e.g., learning rate, model size, number of passes, regularization).
 The data scientist may need to go back and forth between 
 the  `Experiment Models`_ activity and the `Optimize Hyperparameters`_ activity
-in order to define the optimal ML model.
+in order to optimize ML model.
 
 .. _code_model:
 
@@ -86,4 +86,5 @@ the ML model is programmed as training and inference applications.
 This activity may require various system development and 
 infrastructure skills 
 (e.g., web API development, cloud programming, container orchestration)
-and is thus often performed by the data engineer or software engineer.
+and thus is common a joint effort between 
+the data scientist and software engineer.
