@@ -20,7 +20,7 @@ or automated whereever possible especially for recurrent training.
 |                                |                                                         | training          |                    |
 |                                |                                                         | set               |                    |
 +--------------------------------+---------------------------------------------------------+-------------------+--------------------+
-| `Validate Model `_             | The new trainied ML model is validated with a testing   | Trained model &   | Validated model    |
+| `Validate Model`_              | The new trainied ML model is validated with a testing   | Trained model &   | Validated model    |
 |                                | set on the inference accuracy. Only the model with an   | testing set       |                    |
 |                                | expected accuracy is used for deployment.               |                   |                    |
 +--------------------------------+---------------------------------------------------------+-------------------+--------------------+
