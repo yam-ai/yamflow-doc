@@ -16,8 +16,8 @@ and finally codes the selected and turned ML model.
 | Activity                       | Description                                             | Inputs            | Outputs            |
 +================================+=========================================================+===================+====================+
 | `Explore Data`_                | The available data sets are explored and the            | Raw or            | Suitable           |
-|                                | suitable ones are prepared (in the Pipelining work      | cleaned data      | data set           |
-|                                | stream for modeling the ML problem.                     |                   |                    |
+|                                | suitable ones are prepared (in the :doc:`pipelining`    | cleaned data      | data set           |
+|                                | work stream for modeling the ML problem.                |                   |                    |
 +--------------------------------+---------------------------------------------------------+-------------------+--------------------+
 | `Experiment Models`_           | Various ML algorithms and models (e.g., neural network  | Suitable          | Selected           |
 |                                | architectures) are experimented using the data          | data set          | ML                 |
