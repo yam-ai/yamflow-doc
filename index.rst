@@ -37,12 +37,12 @@ the activity sequences and data flows should largely resemble YamFlow.
 
 YamFlow consists of the following work streams:
 
-- :doc:`pipelining` specifies the work stream to build the data pipelines
+- :doc:`pipelining` specifies the work stream for building the data pipelines
   for ML modeling, training, and inference.
-- :doc:`modeling` specifies the work stream to explore the data, and 
+- :doc:`modeling` specifies the work stream for exploring the data, and 
   design and code the ML model.
-- :doc:`training` specifies the work stream to train the coded model.
-- :doc:`inference` specifies the work stream to deploy the inference app
+- :doc:`training` specifies the work stream for training the coded model.
+- :doc:`inference` specifies the work stream for deploying the inference application
   and serve the trained model.
 
 
