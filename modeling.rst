@@ -39,8 +39,12 @@ Explore Data
 In this activity, the data scientist explores the data sets prepared 
 in the Pipelining work stream and selects the suitable data sets 
 for training and inference. 
-Usually, the data scientist would use an interactive data science tool 
-(also known as data science notebook) to explore the data sets.
+Usually, the data scientist uses interactive data science tools 
+(e.g.,
+`R Studio <https://www.rstudio.com>'_
+`Jupyter Notebook <https://jupyter.org>`_, and
+`Apache Zeppelin <https://zeppelin.apache.org>`_) 
+to explore the data sets.
 If the suitable data sets are unavailable 
 or incomplete or malformed or unclean, further data acquisition, cleansing, 
 or  preprocessing work in the Pipelining work stream will be required.
@@ -82,9 +86,8 @@ Code Model
 ==========
 
 After the ML model with the hyperparameters are defined, 
-the ML model is programmed as training and inference applications. 
-This activity may require various system development and 
-infrastructure skills 
-(e.g., web API development, cloud programming, container orchestration)
-and thus is common a joint effort between 
-the data scientist and software engineer.
+the ML model is coded using ML libraries, e.g., 
+`TensorFlow <https://www.tensorflow.org/>`_, 
+`CNTK <https://www.microsoft.com/en-us/cognitive-toolkit>`_, 
+and `PyTorch <https://pytorch.org>`_. 
+The coded model is to be incorporated in the inference application.
