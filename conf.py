@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'YamFlow Documentation'
-copyright = '2019, YAM AI'
+copyright = '2019, YAM AI.'
 author = 'Dr. Thomas Lee'
 
 # The short X.Y version
-version = '0.1'
+version = '0.9'
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '0.9'
 
 
 # -- General configuration ---------------------------------------------------
