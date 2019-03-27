@@ -19,7 +19,7 @@ YamFlow proposes a reference workflow for machine learning (ML).
 This reference workflow is aimed to provide a canonical taxonomy for 
 practitioners to understand and communicate the activity and data flows
 typically involved in a ML process. In addition, YamFlow also serves
-as the baseline for `YAM.AI <https://www.yam.ai>`_ to architect a 
+as the baseline for `YAM AI Machinery <https://www.yam.ai>`_ to architect a 
 programming framework for coding interoperable and composable ML tasks.
 
 YamFlow Overview
@@ -31,7 +31,7 @@ Although the actual processes of different ML implementations may vary,
 the activity sequences and data flows should largely resemble YamFlow.
 
 .. _yamflowchart:
-.. figure:: _static/images/yamflowchart.svg
+.. figure:: _static/images/yamflowchart.png
    
    YamFlow Chart.
 

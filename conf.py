@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'YamFlow Documentation'
-copyright = '2019, YAM AI.'
+copyright = '2019, YAM AI Machinery'
 author = 'Dr. Thomas Lee'
 
 # The short X.Y version
