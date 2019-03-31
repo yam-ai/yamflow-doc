@@ -41,7 +41,7 @@ in the Pipelining work stream and selects the suitable data sets
 for training and inference. 
 Usually, the data scientist uses interactive data science tools 
 (e.g.,
-`R Studio <https://www.rstudio.com>'_
+`R Studio <https://www.rstudio.com>`_,
 `Jupyter Notebook <https://jupyter.org>`_, and
 `Apache Zeppelin <https://zeppelin.apache.org>`_) 
 to explore the data sets.
