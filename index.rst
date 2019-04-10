@@ -32,7 +32,7 @@ Although the actual processes of different ML implementations may vary,
 the activity sequences and data flows should largely resemble YamFlow.
 
 .. _yamflowchart:
-.. figure:: _static/images/yamflowchart.png
+.. figure:: _static/images/yamflow.png
    
    YamFlow Chart.
 
