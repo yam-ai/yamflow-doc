@@ -12,6 +12,9 @@ YamFlow
    training.rst
    inference.rst
 
+This specification is maintained at a `GitHub project <https://github.com/yam-ai/yamflow-doc>`_. 
+Please leave your feedback on `GitHub Issues <https://github.com/yam-ai/yamflow-doc/issues>`_.
+
 Introduction
 ============
 
