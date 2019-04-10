@@ -15,12 +15,13 @@ YamFlow
 Introduction
 ============
 
-YamFlow proposes a reference workflow for machine learning (ML).
+YamFlow proposes a reference workflow for 
+the machine learning (ML) development lifecyle.
 This reference workflow is aimed to provide a canonical taxonomy for 
-practitioners to understand and communicate the activity and data flows
+practitioners to understand and communicate the activity sequences and the data flows 
 typically involved in a ML process. In addition, YamFlow also serves
-as the baseline for `YAM AI Machinery <https://www.yam.ai>`_ to architect a 
-programming framework for coding interoperable and composable ML tasks.
+as the baseline for `YAM AI Machinery <https://www.yam.ai>`_ to design ML 
+programming frameworks for developing interoperable and composable ML tasks.
 
 YamFlow Overview
 ================
@@ -38,12 +39,13 @@ the activity sequences and data flows should largely resemble YamFlow.
 YamFlow consists of the following work streams:
 
 - :doc:`pipelining` specifies the work stream for building the data pipelines
-  for ML modeling, training, and inference.
+  for ML modeling, training, and inference in the development time.
 - :doc:`modeling` specifies the work stream for exploring the data, and 
-  design and code the ML model.
-- :doc:`training` specifies the work stream for training the coded model.
-- :doc:`inference` specifies the work stream for deploying the inference application
-  and serve the trained model.
+  design and code the ML model in the design time.
+- :doc:`training` specifies the work stream for training the coded model in the 
+  recurrent training time.
+- :doc:`inference` specifies the work stream for deploying the inference 
+  application and serve the trained model in the runtime.
 
 
 
